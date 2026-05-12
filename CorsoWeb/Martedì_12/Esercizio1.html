@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Esercitazione</title>
+    </head>
+
+
+    <body>
+
+        <!--utilizzo il primo div-->
+        <div>
+            <h1>Esercitazione</h1>
+        </div>
+
+        <!--utilizzo il secondo div-->
+
+        <div>
+           <!--inserimento di un paragrafo testuale-->
+           <p>Andiamo a raccogliere i dati degli <strong>utenti</strong></p>
+     
+        </div>
+
+
+        <!-- ultimo div-->
+
+        <div>
+            <h2>Dati dell'<em>utente</em></h2>
+
+            <form action="login.php" method="post">
+                
+                <div>
+
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Inserisci il tuo nome" required>
+                </div>
+
+                <div>
+
+                    <label for="cognome">Cognome</label>
+                    <input type="text" id="cognome" name="cognome" placeholder="Inserisci il tuo cognome" required>
+                </div>
+
+                <div>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Inserisci la tua email" required>
+                </div>
+
+                <div>
+
+                    <label for="password">password</label>
+                    <input type="password" id="password" name="password" placeholder="Inserisci la tua password" required>
+                 </div>
+
+                <div>
+                    <!-- utilizziamo ora il tag radio-->
+                    <p>Seleziona il tuo ruolo:</p>
+
+                    <input type="radio" id="studente" name="ruolo" value="studente" required>
+                    <label for="studente">Studente</label>
+
+                    <input type="radio" id="docente" name="ruolo" value="docente" required>
+                    <label for="docente">Docente</label>
+                </div> 
+
+                <div>
+                    <p>Corso di studio</p>
+                    <!-- usiamo ora il tag select-->
+                     <label for="corso">Scegli il corso che stai studiando</label>
+                     <select id="corso" name="corso" required>
+                        <option value="">Seleziona il corso</option>
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="javaScript">JavaScript</option>
+                     </select>
+                </div>
+
+                <div>
+                    <!-- utilizziamo ora checkbox-->
+                     <p>Indicami la tua materia preferita</p>
+                     <input type="checkbox" id="matematica" name="materia preferita" value="matematica">
+                    <label for="matematica">matematica</label>
+
+
+                    <input type="checkbox" id="inglese" name="materia preferita" value="inglese">
+                    <label for="inglese">inglese</label>
+
+                    <input type="checkbox" id="italiano" name="materia preferita" value="italiano">
+                    <label for="italiano">italiano</label>
+                </div>
+
+                <div>
+                    <button type="submit">Registrati</button>
+                </div>
+
+
+
+            </form>
+
+        </div>
+
+
+
+
+
+
+        
+
+
+    </body>
+</html>
