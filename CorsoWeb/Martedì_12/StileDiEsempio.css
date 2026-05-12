@@ -1,0 +1,25 @@
+p { 
+    color: blue;
+}
+ /* questo è un selettore elementare di elementi */
+
+h1 {
+    font-size: 32px;
+}
+
+div {
+    background-color: lightgray;
+}
+
+/* in questo file css ci sono le specifiche del paragrafo di h1 e del div */
+
+/* .classeesempio{
+    /* è un selettore di classe */
+
+#titoloimportante{
+    font-size: 24px;
+}
+
+a:hover{
+    color:red
+}

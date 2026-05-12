@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Andiamo a mettere i mega-dati -->
+        <meta charset="UTF-8">
+        <meta name="description" content="Esempio di pagina HTML">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="StileDiEsempio.css">
+    </head>
+
+    <body>
+        <!--andiamo a mettere tutti gli oggetti semantici come header, main, article. nav e footer li ho messi in fondo-->
+        <header>
+            <h1>Registrazione ad un evento tecnologico</h1>
+        </header>
+
+
+        <main>
+            <section>
+                <h2>Benvenuto all'evento di oggi</h2>
+                <p>Questo è il contenuto della sezione principale</p>
+            </section>
+
+            <article>
+                <h2>Articolo scientifico</h2>
+                <p><em> c'è il contenuto dell'articolo</em></p>
+            </article>
+        </main>
+
+        
+
+        <div>
+            <!--Nuova sezione dopo aver definito tutti gli elementi semantici -->
+            <h3>Luogo ed immagine dell'evento:</h3>
+            
+        </div>
+
+        <div>
+            <a href = 'https://www.google.com/maps'>Vai al sito</a>
+            <p>Premendo questo link si potrà vedere dove si trova il luogo nella quale avverrà <strong>'evento tecnologico</strong></p>
+            <img src="istituto.jpg" alt="">
+
+        </div>
+
+        <div>
+            <table border="1">
+        <thead>
+            <tr>
+<!--qui metto gli elementi principali della tabella-->
+                    <th>Evento</th>
+                    <th>Aula</th>
+                    <th>Ora</th>
+            </tr>
+        </thead>
+        <!-- nel tbody c'è il contenuto della tabella-->
+         <!-- nella tabella inseriamo tutti gli eventi con le relative aule e orari da seguire-->
+        <tbody>
+            <tr>
+                    <td>HTML</td>
+                    <td>A5</td>
+                    <td>9:30-11:30</td>
+            </tr>
+            <tr>
+                    <td>CSS</td>
+                    <td>A7</td>
+                    <td>11:30-13:30</td>
+            </tr>
+
+             <tr>
+                    <td>JavaScript</td>
+                    <td>A8</td>
+                    <td>14:30-16:30</td>
+            </tr>
+        </tbody>
+    </table>
+        </div>
+
+        <h4>Registrazione all'evento:</h4>
+
+<!-- passiamo ad utilizzare il form per la registrazione dell'evento-->
+         <form action="#" method="post">
+                
+                <div>
+
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Inserisci il tuo nome" required>
+                </div>
+
+
+                <div>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Inserisci la tua email" required>
+                </div>
+
+                <div>
+
+                    <label for="password">password</label>
+                    <input type="password" id="password" name="password" placeholder="Inserisci la tua password" required>
+                 </div>
+
+                <div>
+                    <!-- utilizziamo ora radio button-->
+                    <p>Seleziona il tuo stato lavorativo:</p>
+
+                    <input type="radio" id="studente" name="ruolo" value="studente" required>
+                    <label for="studente">Studente</label>
+
+                    <input type="radio" id="dipendente" name="ruolo" value="dipendente">
+                    <label for="dipendente">Dipendente</label>
+
+                    <input type="radio" id="disoccupato" name="ruolo" value="disoccupato">
+                    <label for="disoccupato">disoccupato</label>
+                </div> 
+
+                <div>
+                    <p>Corsi presenti all'interno dell'evento</p>
+                    <!-- usiamo ora il tag select-->
+                     <label for="corso">Scegli il corso che vuoi seguire</label>
+                     <select id="corso" name="corso" required>
+                        <option value="">Seleziona il corso</option>
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="javaScript">JavaScript</option>
+                     </select>
+                </div>
+
+                <div>
+                    <!-- utilizziamo ora checkbox-->
+                     <p>Indicami il corso che ti è piaciuto di più in questo evento</p>
+                     <input type="checkbox" id="HTML" name="corso tecnologico" value="HTML">
+                    <label for="HTML">HTML</label>
+
+
+                    <input type="checkbox" id="CSS" name="corso tecnologico" value="CSS">
+                    <label for="CSS">CSS</label>
+
+                    <input type="checkbox" id="JavaScript" name="corso tecnologico" value="JavaScript">
+                    <label for="JavaScript">JavaScript</label>
+                </div>
+
+                <div>
+                    <button type="submit">Registrati all'evento</button>
+                </div>
+
+
+
+            </form>
+
+        </div>
+
+        <div>
+
+            <nav>
+        
+                <a href="#">Home</a>
+                <a href="#">Contatti</a>
+                <a href="#">Assistenza</a>
+
+            
+            </nav>
+
+        </div>
+
+
+
+
+    <footer>
+            <p>Copyright 2026</p>
+        </footer>
+
+
+
+    </body>
+</html>
