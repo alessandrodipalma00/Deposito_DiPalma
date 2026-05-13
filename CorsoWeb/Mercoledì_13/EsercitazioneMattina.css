@@ -1,0 +1,66 @@
+
+/* utilizziamo un selettore per tag, uno per la classe e uno per id */
+/* selettore generale */
+p{
+    color: red;
+}
+
+p{
+    color: blue;
+}
+
+body{
+     background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* selettore classe */
+.box{
+    background-color: lightblue;
+}
+/* selettore id */
+#titolo{
+    color: green;
+}
+
+h1{
+    color: #2c3e50;
+    font-size: 2rem;
+    line-height: 1.2;
+ }
+
+ h1{
+    color: yellow;
+    font-size: 2rem;
+    line-height: 1.2;
+ }
+
+/* applicare ora proprietà relative a margin, padding, border e content */
+
+.EsempioMargin{
+    margin: 30px;
+
+ }
+
+ .EsempioPadding{
+    padding: 20px;
+    background-color: lightgreen;
+ }
+
+ .EsempioBorder{
+    border: 10px solid black;
+ }
+
+ .EsempioContent{
+    width: 200px;
+    height: 100px;
+    background-color:lightblue;
+ }
+
+ /* vediamo ora le pseudo classi */
+
+  a:hover{
+    color: red;
+}
+
+

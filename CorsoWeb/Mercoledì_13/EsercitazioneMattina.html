@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Esercitazione Mattina</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="EsercitazioneMattina.css">
+    </head>
+    <body>
+        <h1>Titolo principale dell'esercitazione</h1>
+
+        <div>
+            <p>Questo paragrafo serve a capire quale selettore domina sull'altro.</p>
+        </div>
+
+            <!-- Vediamo la specificità -->
+
+            <p id="titolo" class="box"> Qui invece vediamo come id domina sugli altri</p>
+        
+
+        <div class="box">
+            <p> In quest'altro paragrafo domina il class</p>
+        </div>
+
+
+            <!-- Qui c'è la prova di tutte le box model -->
+
+
+        <div class="EsempioMargin">Ora vediamo l'effetto del margin</div>
+
+         <div class="EsempioPadding">Qui vediamo l'effetto del padding</div>
+
+             <div class="EsempioContent">Ora vediamo l'effetto del content</div>
+
+                <div class="EsempioBorder">Ora vediamo l'effetto del border</div>
+
+                <!-- comportamento della cascata creando almeno due regole di conflitto -->
+
+                <div>
+                    <p>Qui il colore dovrebbe essere blu per il conflitto di cascata.</p>
+                </div>
+
+                <div>
+                    <h1>Titolo sempre per vedere il comportamento della cascata</h1>
+                    <!-- il colore dovrebbe essere giallo -->
+                </div>
+
+                <!-- vediamo ora la pseudo classe hover -->
+                <a href="#" class="a">Passa il mouse sopra di me</a>
+
+
+
+
+        
+        
+    </body>
+</html>
