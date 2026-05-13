@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Esempio di CSS</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="EsStile.css">
+    </head>
+    <body>
+        
+        <p>Paragrafo per capire quale colore domina.</p>
+        
+        <div>
+            <p>Paragrafo ereditato</p>
+        </div>
+        <!-- in questo caso il paragrafo all'interno del div non eredita il colore del div -->
+         <!-- è più importante il generic che l'ereditarietà, l'ereditarietà si applica solo se non c'è nulla -->
+
+         <div><span>Ciao</span></div>
+
+         <!-- in questo caso con lo span non abbiamo altre regole specifiche quindi si eredita da div -->
+
+         <p id="titolo" class="box">Ora uscirà il colore dell'id</p>
+          <!-- in questo caso il colore è rosso perchè id domina su class e generic -->
+          <!-- nell'altro caso invece collaborano insieme perchè non vanno in contrasto tra di loro -->
+
+          <div class="box">
+            <h1>Titolo principale</h1>
+            <p>Questo è un paragrafo di esempio per mostrare colori e tipografia</p>
+          </div>
+
+          <div class="esempiomisure">
+            <p>Questo è un paragrafo con misure in pixel</p>
+          </div>
+
+          <!-- qui ho utilizzato un'altra classe -->
+
+          <div class="classe">Prova padding</div>
+
+          <div class="ProvaBorder">Qui invece proviamo il border</div>
+
+          <div class="ProvaMargin">Ora proviamo il margine</div>
+
+          <!-- padding e margin lavorano sul contenuto del div, il padding è più interno e il margine è più esterno -->
+
+          
+
+        
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>

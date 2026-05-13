@@ -1,0 +1,68 @@
+
+/* creo un grid per la struttura generale della pagina */
+
+.container {
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "sidebar content"
+    "footer footer";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 100px 200px 100px;
+    gap: 10px;
+}
+
+
+div {
+    border: 1px solid black;
+}
+/* centriamo verticalmente il contenuto dell'header */
+
+.header {
+    display: flex;
+    grid-area: header;
+    background-color: lightblue;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+/* usiamo la flexbox all'interno del sidebar  per allineare gli elementi in maniera orizzontale*/
+.sidebar {
+    display: flex;
+    grid-area: sidebar;
+    background-color: lightgray;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/* esempio di posizionamento relativo e assoluto */
+.content {
+    position: relative;
+    grid-area: content;
+    background-color: lightgreen;
+    
+}
+
+.nuovo {
+    position:absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+
+    background-color: red;
+    padding: 10px;
+}
+
+/* utilizziamo il flexbox anche all'interno del footer */
+
+.footer {
+    display: flex;
+    grid-area: footer;
+    background-color: lightcoral;
+    justify-content: center;
+    align-items: center;
+}
