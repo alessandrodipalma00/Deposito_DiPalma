@@ -1,0 +1,73 @@
+:root{
+    --colore-principale: #3498db;
+    --colore-testo: #2c3e50;
+    --spaziatura: 10px;
+    /* queste sono le variabili globali in modo che non devo ripetere i valori ogni volta che voglio usarli */
+}
+
+.card {
+    background-color: var(--colore-principale);
+    padding: var(--spaziatura);
+    color: white;
+}
+
+h1 {
+    color: var(--colore-testo);
+}
+
+
+/* vediamo ora gli pseudo-elementi */
+.messaggio::before {
+    content :"⚠ ";
+    color: red;
+}
+
+.messaggio::after {
+    content: " ✔";
+    color: green;
+}
+
+/* Animazioni */
+
+.box {
+width: 100px;
+height: 100px;
+background-color: steelblue;
+transition: transform 0.5s;
+animation: cambioColore 3s infinite;
+}
+
+.box:hover {
+transform: scale(1.2);
+}
+
+@keyframes cambioColore {
+0% {
+background-color: steelblue;
+}
+
+50% {
+background-color: coral;
+}
+
+100% {
+background-color: steelblue;
+}
+}
+
+/* display e visibility */
+
+.box1 {
+    display: block;
+    background-color: lightblue;
+}
+
+.box2 {
+    visibility: hidden;
+    background-color: lightgreen;
+}
+
+.box3 {
+    display: none;
+    background-color: coral;
+}

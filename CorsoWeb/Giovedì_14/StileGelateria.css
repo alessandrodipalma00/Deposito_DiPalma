@@ -1,0 +1,86 @@
+
+/* mettiamo ora la nostra variabile globale CSS */
+
+:root {
+    --colore-principale: lightblue;
+    --colore-secondario: white;
+    --colore-terziario: lightpink;
+    --colore-quaternario: lightgreen;
+    --colore-testo: #333;
+    --spaziatura: 10px;
+}
+
+mettiamo ora lo stile generale
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--colore-secondario);
+    color: var(--colore-testo);
+}
+
+header {
+    background-color: var(--colore-principale);
+    padding: var(--spaziatura);
+    text-align: center;
+    color: white;
+}
+
+nav {
+    background-color: var(--colore-terziario);
+    padding: var(--spaziatura);
+
+}   
+
+nav a {
+    color: var(--colore-testo);
+    font-weight: bold;
+
+}
+
+.gusti {
+    padding: var(--spaziatura);
+    text-align: center;
+    color: var(--colore-testo);
+}
+
+.lista-gusti {
+    
+    background-color: var(--colore-quaternario);
+
+
+}
+
+.gusto {
+    padding: var(--spaziatura);
+}
+
+/* aggiungiamo ora la transizione */
+.card-promozionale {
+    position: relative;
+    background-color: var(--colore-principale);
+    color: white;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    padding: var(--spaziatura);
+    text-align: center;
+    transition: transform 0.5s;
+
+}
+
+.card-promozionale:hover {
+    transform: scale(1.1);
+    color: var(--colore-testo);
+}
+
+.card-promozionale::before {
+    content: "★ OFFERTA ★";
+    position:absolute;
+    top: -20px;
+    left: 5px;
+    background-color: white;
+    color: var(--colore-principale);
+    padding:var(--spaziatura);
+
+}
+
