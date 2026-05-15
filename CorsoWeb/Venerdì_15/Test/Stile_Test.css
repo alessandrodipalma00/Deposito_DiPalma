@@ -1,0 +1,88 @@
+/* impostiamo il nostro header */
+header {
+    display:flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+/* modifichiamo il nostro logo con un flexbox in modo da avere logo e titolo allineati */
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    
+}
+
+h1 {
+    font-size: 40px;
+    margin: 0;
+    color: rgb(34, 32, 32);
+}
+
+.chi-siamo {
+    display: flex;
+    font-size: 24px;
+    color: #333;
+    position: relative;
+    background-color: #f0f0f0;
+}
+
+.testo {
+   flex: 1; /*   suggerito dal boiler per dividere testo e immagine in due parti uguali */
+    padding: 20px;
+}
+
+.immagine img {
+    flex:1;
+    height: 60%;
+}
+
+h2 {
+    font-size: 28px;
+    color: palevioletred;
+}
+
+h3 {
+    font-size: 18px;
+    color:blue;
+}
+
+.prodotto{
+    background-color: rgb(255, 227, 231);
+}
+
+form {
+    width: 500px;
+
+    display: flex;
+     flex-direction: column; /*suggerito dal boiler per mettere tutto in colonna */
+    gap: 20px;
+
+
+}
+
+button {
+    background-color: #d46a92;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b9557a;
+}
+
+footer{
+    
+    background-color: #f0f0f0;
+    color: #333;
+    text-align: center;
+    padding: 30px 20px;
+    margin : 50px;
+
+}
