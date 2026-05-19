@@ -61,8 +61,7 @@ function prezzoAlto(prodotti){
 
 // console.log('Prodotto più costoso:', prezzoAlto(array));
 
-// prodotti disponibili
-
+// function che restituisce i prodotti disponibili
 function prodottiDisponibili(prodotti){
     let disponibili =[];
 
@@ -91,7 +90,7 @@ function nomiprodotti(prodotti){
 
 }
 
-
+// definiamo la nostra variabile di scelta
 let scelta = '';
 while(scelta !== 'esci'){
 scelta = prompt("Scegli l'operazione che vuoi fare(per finire scrivi esci):");
@@ -108,19 +107,18 @@ scelta = prompt("Scegli l'operazione che vuoi fare(per finire scrivi esci):");
             console.log(array);
             break;
         case '3':
-            console.log('Valore totale del mercato è', valoreTotale(array));
+            console.log('Valore totale del mercato è: ', valoreTotale(array));
             break;
         case '4':
              if(array.length ===0){
-            console.log('Catalogo vuoto');
-        }else {
-        console.log('Il prodotto più costoso è:', prezzoAlto(array));
-        break;
-        }
+                    console.log('Catalogo vuoto');
+                        }else {
+                console.log('Il prodotto più costoso è: ', prezzoAlto(array));
+                        }
+            break;
         case '5':
-           console.log('Prodotti disponibili', prodottiDisponibili(array)); 
+           console.log('Prodotti disponibili: ', prodottiDisponibili(array)); 
            break;
-
         case '6':
              console.log(nomiprodotti(array));
              break;
