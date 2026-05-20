@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    color: black;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: rgb(116, 192, 218);
+}
+
+.output {
+    margin-top: 20px;
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 5px;
+    min-width: 250px;
+}
+ /* in questo caso cambiano i colori dal caricamento fino al success */
+.caricamento {
+    background-color: #fff3cd;
+    border-color: yellow;
+    color: #856404;
+}
+
+.success {
+    background-color: #d4edda;
+    border-color: green;
+    color: #165e26;
+}
