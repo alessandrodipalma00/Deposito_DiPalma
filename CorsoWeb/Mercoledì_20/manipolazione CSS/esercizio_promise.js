@@ -19,15 +19,17 @@ function caricaDatiUtente(){
 async function caricaDati(){
     output.textContent = 'Caricamento in corso...';
 
+    // modifica classe CSS
     output.classList.remove('success');
     output.classList.add('caricamento');
 
     try{
         let utente = await caricaDatiUtente();
 
-        output.innerHTML = 'Nome: ' + utente.nome + '<br>' +
+        output.innerHTML = 'Nome: ' + utente.nome + '<br>' +  // <br> consigliato dall'AI per mettere a capo e tenere i dati ordinati
                            'Ruolo: ' + utente.ruolo + '<br>' + 
                            'Stato: ' + utente.stato;
+
 
         output.classList.remove('caricamento');
         output.classList.add('success');
