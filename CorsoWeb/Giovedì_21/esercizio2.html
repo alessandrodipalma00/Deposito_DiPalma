@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="it">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="esercizio2.css">
+    </head>
+    <body>
+        <header class="header">
+            <h1>Libreria</h1>
+
+            <nav id="nav" class="nav">
+                <a href="#">Home</a>
+                <a href="#">Aggiungi Libro</a>
+                <a href="#">Contatti</a>
+            </nav>
+
+            <button id="hamburger" class="hamburger">☰</button>
+        </header>
+
+        <section class="intro">
+            <p>
+                Benvenuto nella tua libreria. Qui puoi leggere un'infinità di libri in assoluta tranquillità.
+            </p>
+        </section>
+
+        <section id="form" class="form-section">
+            <h2>Aggiungi un libro</h2>
+
+            <form id="formLibri">
+                <input type="text" id="titolo" placeholder="Titolo libro" required>
+                <input type="text" id="autore" placeholder="Autore" required>
+                <input type="text" id="genere" placeholder="Genere" required>
+                <input type="number" id="anno" placeholder="Anno pubblicazione" required>
+                <textarea id="descrizione" placeholder="Breve descrizione" required></textarea>
+
+                <button type="submit">Aggiungi libro</button>
+            </form>
+        </section>
+
+        <section id="libri" class="library">
+            <h2>La tua libreria</h2>
+            <div id="contenitore" class="contenitore"></div>
+        </section>
+       
+        
+        <script src="esercizio2.js" async defer></script>
+    </body>
+</html>
