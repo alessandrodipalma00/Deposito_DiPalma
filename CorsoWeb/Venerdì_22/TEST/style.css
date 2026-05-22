@@ -1,0 +1,194 @@
+.site-header {
+	top: 0;
+	z-index: 10;
+	border-bottom: 1px solid black;
+	background: rgba(151, 149, 48, 0.92);
+}
+
+.navbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 48px;
+    
+}
+
+.logo{
+
+    height: auto;
+}
+
+.menu {
+	display: flex;
+	gap: 10px;
+	margin: 0;
+	padding: 2px;
+	list-style: none;
+}
+
+.menu a {
+	border-radius:0.375rem;
+	padding: 0.5rem 1rem;
+	color: white;
+	font-weight: 500;
+    gap: 10px;
+}
+
+.menu a:hover,
+.menu a.active {
+	background: rgba(53, 61, 21, 0.397);
+	color: #f8fafc;
+}
+
+.hero {
+	height: 600px;
+	background-color: rgb(202, 134, 56);
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 100px 20px;
+	text-align: center;
+	margin-bottom: 30px;
+	margin-top: 20px;
+}
+
+.hero-content {
+	background-color: rgba(117, 119, 23, 0.116);
+	padding: 40px;
+	border-radius: 15px;
+	max-width: 700px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.hero-content h1 {
+	font-family: "Dancing Script", cursive;
+	font-size: 3.5rem;
+	margin-bottom: 15px;
+	line-height: 1.2;
+}
+
+.hero-content p {
+	font-size: 1.2rem;
+	margin-bottom: 25px;
+}
+
+.info-section {
+	padding: 60px 40px;
+	max-width: 800px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.info-section h2 {
+	font-size: 2.5rem;
+	color: orange;
+	margin-bottom: 20px;
+}
+
+
+
+.badge-accent {
+	display: inline-block;
+	margin-bottom:0.75em ;
+	color: solid black;
+	font-weight: 700;
+	font-size: 24px;
+	letter-spacing: 0.15em;
+	position: relative;
+	padding-left: 1rem;
+}
+
+.badge-accent::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 12px;
+	height: 2px;
+}
+
+p{
+    font-size: 24px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 36px;
+}
+
+/* css seconda pagina */
+
+.dogs-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.dog-card {
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    background: white;
+}
+
+.dog-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.dog-card:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+button {
+    background: green;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* css terza pagina */
+.contenitore{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    align-items: center;
+}
+
+.form-gruppo{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+     border: 1px solid transparent;
+	border-radius: 999px;
+}
+
+.form-registrazione{
+    display: flex;
+    flex-direction: column;
+    min-width: 320px;
+    max-width: 720px;
+    width:100%; 
+    gap:20px;
+    
+}
+
+
