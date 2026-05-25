@@ -1,0 +1,102 @@
+:root{
+    --bg: #160f2a;
+    --card: #223046;
+    --text: #e2e8f0;
+    --accent: #37aee0;
+}
+
+body.light{
+    --bg: #f1f5f9;
+    --card: #ebe2e2;
+    --text: #0f172a;
+    --accent: #2563eb;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.container{
+    width: 100%;
+    max-width: 600px;
+}
+
+h1{
+    text-align: center;
+}
+
+
+.card{
+    background-color: var(--card);
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+input{
+    width: 100%;
+    padding:10px;
+    margin:8px 0;
+    border-radius: 8px;
+    border: none;
+}
+
+button{
+    padding: 15px;
+    margin: 5px 5px 0 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: var(--accent);
+    color: white;
+    transition: 0.2s;
+}
+
+button:hover{
+    opacity: 0.8;
+}
+
+.profile{
+    margin-top:20px;
+    padding:15px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.05);
+}
+
+@media screen and (max-width: 768px){
+
+    .container{
+        width: 90%;
+    }
+
+    .card{
+        padding: 15px;
+    }
+
+    input{
+        width: 100%;
+        /* evita che l'input esca dalla card */
+        box-sizing: border-box;
+    }
+
+    button{
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    h1{
+        font-size: 26px;
+    }
+
+    p{
+        font-size: 14px;
+    }
+}
