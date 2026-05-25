@@ -70,6 +70,9 @@ if (temaSalvato === "light") {
 
 };
 
+// al refresh vengono salvati i dati
+mostraDati();
+
 
 
 
